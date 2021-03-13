@@ -5,9 +5,11 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
-.w3-sofia {
-  font-family: Sofia, cursive;
-}
+.w3-sofia {font-family: Sofia, cursive;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;}
 </style>
 
 <body>
@@ -17,20 +19,21 @@
 
 <div class="w3-container">
   <ul class="w3-ul w3-hoverable">
-    <li><b>Press 1 </b>: To view available storage devices</li>
-    <li><b>Press 2 </b>: To view available partitions</li>
-    <li><b>Press 3 </b>: To work on PV (Persistent Volume)</li>
-    <li><b>Press 4 </b>: To work on VG (Volume Group)</li>
-    <li><b>Press 5 </b>: To work on LV (Logical Volume)</li>
+    <li><b><a href="/pv" >Press 1 </b>: For listing devices</li>
+    <li><b><a href="/pv" >Press 2 </b>: For mounting partitions</li>
+    <li><b><a href="/pv" >Press 3 </b>: To work on PV (Persistent Volume)</a></li>
+    <li><b><a href="/vg" >Press 4 </b>: To work on VG (Volume Group)</li>
+    <li><b><a href="/lv" >Press 5 </b>: To work on LV (Logical Volume)</li>
   </ul>
 </div>
 <br />
 
 <div class="w3-container">
- <form class="w3-container w3-card-4 w3-light-grey" action="/test">
-  <p>      
+ <form class="w3-container w3-card-4 w3-light-grey" action="/lvm-choice">
+<p>      
   <label><b><center>Enter Your Choice :</center></b></label>
   <input class="w3-input w3-border" type="text" name="choice"></p>
+<p> You can also navigate from menu.</p>
 </div>
 <br />
 <div class="w3-container">

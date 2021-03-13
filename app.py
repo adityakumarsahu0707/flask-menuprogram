@@ -11,19 +11,19 @@ def hello_world():
 def home():
     return render_template("lvm.html")
 
-@app.route('/test', methods=["GET"])
-def test():
+@app.route('/lvm-choice', methods=["GET"])
+def lvm_choice():
     ch=request.args.get("choice")    
     if ch == '1':
         return("Your choice : " + ch + " : To view available storage devices")
     elif ch == '2':
         return("Your choice : " + ch + " : To view available partitions")
     elif ch == '3':
-        return("Your choice : " + ch + " : To work on PV (Persistent Volume)")
+        return render_template("pv.html")
     elif ch == '4':
-        return("Your choice : " + ch + " : To work on VG (Volume Group)")
+        return render_template("vg.html")
     elif ch =='5':
-        return("Your choice : " + ch + " : To work on LV (Logical Volume)")
+        return render_template("lv.html")
     else:
         return("Invalid choice try again!!")
 
