@@ -27,5 +27,17 @@ def test():
     else:
         return("Invalid choice try again!!")
 
+@app.route('/pv')
+def pv():
+    return render_template("pv.html")
+
+@app.route('/vg')
+def vg():
+    return render_template("vg.html")
+
+@app.route('/lv')
+def lv():
+    return render_template("lv.html")
+
 if __name__ == '__main__':
     app.run()
