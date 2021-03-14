@@ -29,6 +29,8 @@ def lvm_choice():
 
 @app.route('/pv')
 def pv():
+    val=request.args.get("choice")
+    print(val)
     return render_template("pv.html")
 
 @app.route('/vg')
