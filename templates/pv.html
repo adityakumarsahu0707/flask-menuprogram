@@ -1,5 +1,5 @@
 <html>
-	<head><title>Menu Program</title></head>
+	<head><title>Persistent Volume</title></head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
@@ -27,14 +27,24 @@ function goBack() {
 <div class="w3-container">
   <ul class="w3-ul w3-hoverable">
 <br />
-<li><b><a href="#" >Click Here </b>: To view available PV</a></li>
+<li><b><a href="#" >Press 1 </b>: To view available PV</a></li>
 <br />
-<li><b><a href="#" >Click Here </b>: To create new PV</a></li>
+<li><b><a href="#" >Press 2 </b>: To create new PV</a></li>
 <br />
-<li><b><a href="#" >Click Here </b>: To Delete PV</a></li>
+<li><b><a href="#" >Press 3 </b>: To Delete PV</a></li>
 </div>
-
-<br /> 
+<br /> <br />
+<div class="w3-container">
+ <form class="w3-container w3-card-4 w3-light-grey" action="/output">
+<p>      
+  <label><b><center>Enter Your Choice :</center></b></label>
+  <input class="w3-input w3-border" type="text" name="pv-value"></p>
+</div>
+<br />
+<div class="w3-container">
+<center><p><button class="w3-button w3-indigo" type='submit'>Proceed</button></p></center>
+</div>
+</form>
 
 <form action="/home">
 <div class="w3-container">
